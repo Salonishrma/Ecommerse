@@ -6,7 +6,7 @@ function Details() {
     <div className="right">
       <p className="nike">Nike</p>
       <h2 className="head">WMNS AIR MAX 270 "OCEAN BLISS"</h2>
-      <div style={{ textAlign: "left" }}>
+      <div className="details">
         <div className="price">$215</div>
         <div className="original-price">$410</div>
         <div className="discount">-40%</div>
@@ -22,15 +22,7 @@ function Details() {
           <option value="38">38</option>
         </select>
       </div>
-      <div className="dropdown1">
-        <label htmlFor="color">Color:</label>
-        <select id="color">
-          <option value="black">Black</option>
-          <option value="white">White</option>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-        </select>
-      </div>
+     
 	  <div className="available-option">Available options:</div>
       <div className="available-options-container">
 			<div className="option-box">

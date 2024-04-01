@@ -1,15 +1,21 @@
 .options {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distributing items evenly along the main axis */
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
-  .option {
+}
+
+.option {
+    flex: 1; /* Each option takes equal space */
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 8px;
-  }
-  
+    margin-left: 75px;
+}
+@media screen and (max-width: 826px) {
+.option{
+    margin-left: 40px;
+}
+}
+

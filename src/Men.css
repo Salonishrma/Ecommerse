@@ -1,0 +1,46 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-info {
+    padding: 10px;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .mrp {
+    text-decoration: line-through;
+  }
+  
+  .product-delivery {
+    margin-top: 5px;
+  }
+  
+  @media screen and (max-width: 668px) {
+   
+    .products-container {
+        width: 100%;
+        margin-left: 300px;
+    }
+  }
+  

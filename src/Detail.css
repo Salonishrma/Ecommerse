@@ -18,37 +18,36 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 350px;
   }
-  
-  .price {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 440px;
-    font-size: 30px;
-}
-  
   .s1 {
     text-decoration: underline;
   }
-  
+  .details{
+    margin-left: 500px;
+  }
+  .price {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-right:250px;
+} 
   
   .discount {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 3px;
     background-color: orange;
     padding: 2px 8px;
+    width: 20%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 160px;
   }
   
-  .price,
-  .original-price,
-  .discount {
-    display: inline-block;
-  }
+ 
   
   .original-price {
-    font-size: 15px;
+    font-size: 22px;
     text-decoration: line-through;
-    margin-left: 10px;
+    margin-top:20px;
+   margin-left: 160px;
+   margin-bottom: 20px;
   }
   
   .dropdown {
@@ -62,12 +61,7 @@
     font-size: 16px;
   }
   
-  .dropdown1 {
-    margin-top: 20px;
-    margin-left: 390px;
-    font-size: 25px;
-  }
-  
+ 
   .sizechart {
     text-decoration: underline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -105,7 +99,7 @@
     border: orange;
     color: white;
     font-size: 16px;
-    margin-left: 465px;
+    margin-left: 480px;
     margin-top: 40px;
     padding: 10px 20px;
   }
@@ -115,7 +109,7 @@
     color: white;
     font-size: 16px;
     margin-top:20px;
-    margin-left:468px;
+    margin-left:489px;
     padding: 10px 24px; 
   }
   
@@ -134,23 +128,31 @@
     }
   
     .nike {
-      margin-left: 145px;
+      margin-left: 745px;
       margin-top: -10px;
     }
   
     .head {
         margin-top: -10px;
         font-size: 15px;
-      width: auto;
-      margin-left: 230px;
+      width: 50%;
+      margin-left: 850px;
     }
-  
+   .details{
+    margin-left: 1060px;
+   }
     .price {
-      margin-left: 220px;
+      margin-right: 400px;
       font-size: 15px;
     }
+    .original-price{
+        margin-right: 100px;
+        margin-top: 5px;
+    }
    .discount{
-    margin-left: 5px;
+    margin-left: 65px;
+    width: 10%;
+    margin-top: -10px;
     font-size: 20px;
     padding: 1px;
    }
@@ -160,49 +162,52 @@
       font-size: 14px;
     }
     .dropdown{
-        margin-left: 170px;
+        margin-left: 723px;
     }
     .dropdown1{
-        margin-left: 185px;
+        margin-left: 165px;
     }
   .sizechart {
     font-size: 10px;
-    margin-left: 150px;
+    margin-left: 710px;
     margin-top: 4px;
   }
   .available-option{
-    margin-top: 5px;
-    margin-left: 190px;
+    margin-top: 20px;
+    margin-left: 730px;
     font-size: 14px;
   }
   .available-options-container{
-    margin-left: 150px;
+    margin-left: 730px;
   }
   .option-box{
-    height: 50px;
+    height: 60px;
     font-size: 12px;
     margin-top:5px;
-    padding: 1px 9px;
+    padding: 1px 19px;
   }
   .option-box1{
     position: absolute;
     margin-left: 80px;
-    margin-top: -50px;
+    height: 60px;
+    margin-top: -63px;
     padding: 1px 3px;
     font-size: 12px;
     width: 14%;
   }
   .button1 button {
     font-size: 14px;
-    margin-left: 230px;
+    margin-left: 720px;
     margin-top: 15px;
-    padding: 5px 10px;
+    padding: 2px 4px;
+    width: 15%;
   }
   
   .button2 button {
     font-size: 14px;
     margin-top:10px;
-    margin-left:230px;
+    margin-left:720px;
+    width: 15%;
     padding: 4px 10px; 
   }
 }
