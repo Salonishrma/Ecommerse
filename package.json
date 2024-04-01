@@ -1,13 +1,11 @@
 {
   "name": "ecommerce",
   "private": true,
-  "homepage": "https://github.com/Salonishrma/Ecommerse.git",
+  "homepage": "https://github.com/Salonishrma/Ecomerse_.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy":"npm run build",
-    "deploy":"gh -pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -15,6 +13,7 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.14",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-simple-star-rating": "^5.1.7",
