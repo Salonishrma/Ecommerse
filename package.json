@@ -1,7 +1,7 @@
 {
   "name": "ecommerce",
   "private": true,
-  "homepage": "https://github.com/Salonishrma/Ecommerse",
+  "homepage": "https://github.com/Salonishrma/Ecommerse.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
