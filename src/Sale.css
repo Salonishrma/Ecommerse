@@ -20,9 +20,9 @@
   .ha{
     background-color:black;
     color:white;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
+   
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
   }
   .product-details {
     display: flex;
