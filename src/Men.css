@@ -16,6 +16,7 @@
   
   .product-info {
     padding: 10px;
+    font-size: 25px;
   }
   
   .product-name {
@@ -35,12 +36,22 @@
   .product-delivery {
     margin-top: 5px;
   }
-  
+  .click-here{
+    background-color: black;
+    color:white;
+    padding: 10px 20px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
   @media screen and (max-width: 668px) {
    
     .products-container {
         width: 100%;
         margin-left: 300px;
+    }
+    .product-info {
+      padding: 10px;
+      font-size: 35px;
     }
   }
   

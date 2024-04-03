@@ -1,21 +1,38 @@
 .options {
-    display: flex;
-    justify-content: space-between; /* Distributing items evenly along the main axis */
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.option {
-    flex: 1; /* Each option takes equal space */
-    font-size: 16px;
-    font-weight: bold;
+    position: relative;
+  }
+  
+  .filter-button {
     cursor: pointer;
-    margin-left: 75px;
-}
-@media screen and (max-width: 826px) {
-.option{
-    margin-left: 40px;
-}
-}
-
+    margin-top: 20px;
+    color: white;
+    margin-left: 20px;
+    background-color: black;
+    padding:  5px 20px;
+    font-size:30px
+  }
+  
+  .options-list {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left:20px;
+    z-index: 1;
+  }
+  
+  .option {
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
