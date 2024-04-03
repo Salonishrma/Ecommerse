@@ -107,16 +107,16 @@ function Men() {
       {
         id: 5,
         name: "Bold N Elegant Girl's Party Soft Velvet ",
-        image: "https://m.media-amazon.com/images/I/51Qir2T16RL._SY695_.jpg",
+        image: "https://m.media-amazon.com/images/I/514T315SbiL._SX679_.jpg",
         price: "₹449",
         mrp: "₹689",
         discount: "10% off",
         sizes: ["3 Years","4 Years","5 Years","6 Years"],
         colors: {
-          Yellow:"https://m.media-amazon.com/images/I/51Qir2T16RL._SY695_.jpg",
-          Pink:"https://m.media-amazon.com/images/I/51Ogw43wvNL._SY695_.jpg",
-          Baby_pink:"https://m.media-amazon.com/images/I/51UbkVjQz0L._SY695_.jpg",
-          Black:"https://m.media-amazon.com/images/I/416jXHUGbdL._SY695_.jpg"
+          Yellow:"https://m.media-amazon.com/images/I/51EE2O1oaVL._SX679_.jpg",
+          Pink:"https://m.media-amazon.com/images/I/41cc90qkAFL.jpg",
+          Grey:"https://m.media-amazon.com/images/I/41ZQv9IcABL.jpg",
+          
         },
         details: {
           material: "Velvet",
@@ -133,16 +133,14 @@ function Men() {
       {
         id: 6,
         name: "SVAAR Slingback Clog Shoes for Boys & Girls ",
-        image: "https://m.media-amazon.com/images/I/71V6AtWMsJL._SY695_.jpg",
+        image: "https://m.media-amazon.com/images/I/51kaDG0yZgL._SX695_.jpg",
         price: "₹499",
         mrp: "₹889",
         discount: "40% off",
         sizes: ["2 Years","3 Years","3.5 Years","4 Years",],
         colors: {
-          Peanut_Beige: "https://m.media-amazon.com/images/I/71V6AtWMsJL._SY695_.jpg",
-          Baby_Pink :"https://m.media-amazon.com/images/I/71r6Y8m1xgL._SY695_.jpg",
-          Yellow_Mango :"https://m.media-amazon.com/images/I/71glu9PEI8L._SY695_.jpg",
-          Melon_Green:"https://m.media-amazon.com/images/I/71tbYAlKplL._SY695_.jpg",
+         Blue:"https://m.media-amazon.com/images/I/51kaDG0yZgL._SX695_.jpg",
+         Brown:"https://m.media-amazon.com/images/I/61-aka4ZShL._SX695_.jpg"
         },
         details: {
           material: "Ethylene Vinyl Acetate",
@@ -155,6 +153,7 @@ function Men() {
         },
         limitedTimeDeal: "₹499 with 60% savings"
       }
+    
   ];
 
   const handleProductClick = (product) => {
