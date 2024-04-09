@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './options.css';
+import { Link } from 'react-router-dom';
 
 const Options = ({ setSelectedOption }) => {
   const [showOptions, setShowOptions] = useState(false);
 
-  const handleMenuChangeHandler = (value) => {
-    setSelectedOption(value);
-    setShowOptions(false); 
+  const handleMenuChangeHandler = (optionName) => {
+    setSelectedOption(optionName);
+    setShowOptions(false);
   };
 
   const toggleOptions = () => {
@@ -14,13 +15,13 @@ const Options = ({ setSelectedOption }) => {
   };
 
   const menuList = [
-    { name: 'New Arrivals', value: 'New Arrivals' },
-    { name: 'Footwear', value: 'Footwear' },
-    { name: 'Men', value: 'Men' },
-    { name: 'Women', value: 'Women' },
-    { name: 'Kids', value: 'Kids' },
-    { name: 'Sale', value: 'Sale' },
-    { name: 'Sports', value: 'Sports' }
+    { name: 'New Arrivals', path: '/new-arrivals' },
+    { name: 'Footwear', path: '/footwear' },
+    { name: 'Men', path: '/men' },
+    { name: 'Women', path: '/women' },
+    { name: 'Kids', path: '/kids' },
+    { name: 'Sale', path: '/sale' },
+    { name: 'Sports', path: '/sports' }
   ];
 
   return (
@@ -29,9 +30,11 @@ const Options = ({ setSelectedOption }) => {
       {showOptions && (
         <div className="options-list">
           {menuList.map((menu, key) =>
-            <div className="option" onClick={() => handleMenuChangeHandler(menu.value)} key={key}>
-              {menu.name}
-            </div>
+            <Link to={menu.path} key={key} onClick={() => handleMenuChangeHandler(menu.name)}>
+              <div className="option">
+                {menu.name}
+              </div>
+            </Link>
           )}
         </div>
       )}
