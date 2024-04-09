@@ -1,0 +1,17 @@
+.new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media screen and (max-width: 668px) {
+   
+    .new {
+        width: 100%;
+        margin-left: 350px;
+        font-size: 30px;
+    }
+}
