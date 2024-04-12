@@ -6,8 +6,7 @@ import './Nav.css';
 function Navtag() {
     const cart = useSelector(state => state.cart);
 
-   
-    const totalItemsInCart = cart.reduce((total, item) => total + item.quantity, 0);
+    const totalItemsInCart = cart.length;
 
     return (
         <div className="navbar">

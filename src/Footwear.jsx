@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Men.css';
 import {useDispatch} from 'react-redux';
 import { addToCart } from './actions';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 function Footwear() {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -167,9 +169,15 @@ const handleSizeChange = (size) => {
   setSelectedSize(size);
 };
 
-const handleAddToCart = () => { 
-  dispatch(addToCart(selectedProduct,1))
+const handleAddToCart = () => {
+  dispatch(addToCart(selectedProduct, 1));
+  if (selectedProduct) {
+    toast.success(`${selectedProduct.name} added to cart successfully!`, {
+      position: 'top-right'
+    });
+  }
 };
+
 
 const handleBuyNow = () => {
  
@@ -233,6 +241,7 @@ return (
         )}
       </div>
     ))}
+    <ToastContainer />
   </div>
  );
 }
