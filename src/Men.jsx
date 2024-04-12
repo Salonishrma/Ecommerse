@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import './Men.css';
+import {useDispatch} from 'react-redux';
+import { addToCart } from "./actions";
 
 function Men() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedSize, setSelectedSize] = useState('');
+  const dispatch = useDispatch();
 
   const products = [
     {
       id: 1,
       name: "SOLETHREADS Stellar Sneakers",
       image: "https://m.media-amazon.com/images/I/5184XJcvbEL._SY695_.jpg",
-      price: "₹820",
+      price: "820",
       mrp: "₹11,999",
       discount: "45% off",
       sizes: ["6UK", "7UK", "8UK", "9UK"],
@@ -34,7 +37,7 @@ function Men() {
       id: 2,
       name: "Campus Mens Syrus Running Shoe",
       image: "https://m.media-amazon.com/images/I/71flVch58cL._SY695_.jpg",
-      price: "₹1,075",
+      price: "1,075",
       mrp: "₹1,790",
       discount: "45% off",
       sizes: ["9UK", "10UK"],
@@ -59,7 +62,7 @@ function Men() {
         id: 3,
         name: "ASIAN Men's Wonder Sports Running,Walking & Gym Shoes",
         image: "https://m.media-amazon.com/images/I/41mWz2aRrTL._SY695_.jpg",
-        price: "₹5,175",
+        price: "5,175",
         mrp: "₹8,790",
         discount: "75% off",
         sizes: ["7UK", "8UK", "9UK", "10UK"],
@@ -83,7 +86,7 @@ function Men() {
         id: 4,
         name: "ASIAN Men's Tarzan-11 White Casual Sneaker High-Neck Shoes",
         image: "https://m.media-amazon.com/images/I/71cflgAolqL._SY695_.jpg",
-        price: "₹749",
+        price: "749",
         mrp: "₹889",
         discount: "10% off",
         sizes: ["6UK", "8UK", "10UK"],
@@ -108,7 +111,7 @@ function Men() {
         id: 5,
         name: "OHO Bubbles Men Ortho slippers",
         image: "https://m.media-amazon.com/images/I/71zBUjpA9-L._SY695_.jpg",
-        price: "₹349",
+        price: "349",
         mrp: "₹589",
         discount: "10% off",
         sizes: ["6UK", "7UK", "8UK"],
@@ -136,7 +139,7 @@ function Men() {
         id: 6,
         name: "Nivia HY-Court 2.0 Badminton Shoe",
         image: "https://m.media-amazon.com/images/I/71uwtcGCLNL._SY695_.jpg",
-        price: "₹1299",
+        price: "1299",
         mrp: "₹2589",
         discount: "60% off",
         sizes: ["5UK", "8UK", "10UK"],
@@ -174,7 +177,7 @@ function Men() {
   };
 
   const handleAddToCart = () => { 
-    
+    dispatch(addToCart(selectedProduct,1))
   };
 
   const handleBuyNow = () => {

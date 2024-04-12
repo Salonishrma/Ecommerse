@@ -53,5 +53,10 @@
       padding: 10px;
       font-size: 35px;
     }
+    .product-details {
+      margin: 10px;
+      text-align: center;
+    }
+    
   }
   

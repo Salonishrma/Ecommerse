@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-
+import {useDispatch} from 'react-redux';
+import { addToCart } from "./actions";
 
 function Women() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedSize, setSelectedSize] = useState('');
+  const dispatch = useDispatch();
 
   const products = [
     {
       id: 1,
       name: "FASHIMO Casual Boots for Women and Girl's Parent",
       image: "https://m.media-amazon.com/images/I/71dvCDw3RmL._SY695_.jpg",
-      price: "₹820",
+      price: "820",
       mrp: "₹1,999",
       discount: "45% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -36,7 +38,7 @@ function Women() {
       id: 2,
       name: "Bhogati Fashion Jutti for Ethnic Shoes ",
       image: "https://m.media-amazon.com/images/I/714x1m4UVBL._SY695_.jpg",
-      price: "₹775",
+      price: "775",
       mrp: "₹990",
       discount: "25% off",
       sizes: ["3UK","4UK","5UK", "6UK"],
@@ -62,7 +64,7 @@ function Women() {
         id: 3,
         name: "Double Cut Heeled Sandals Square Toe Sandals ",
         image: "https://m.media-amazon.com/images/I/51vLJbdLGNL._SY695_.jpg",
-        price: "₹575",
+        price: "575",
         mrp: "₹879",
         discount: "35% off",
         sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -86,7 +88,7 @@ function Women() {
         id: 4,
         name: "Smart & Sleek Women's Sequins Block Heels ",
         image: "https://m.media-amazon.com/images/I/61BqoqiAFWL._SY695_.jpg",
-        price: "₹749",
+        price: "749",
         mrp: "₹889",
         discount: "10% off",
         sizes: ["6UK", "8UK", "10UK"],
@@ -110,7 +112,7 @@ function Women() {
         id: 5,
         name: "DIPYO Fancy Wedding Embroidery Wedges Heel",
         image: "https://m.media-amazon.com/images/I/71TosHwyk2L._SY695_.jpg",
-        price: "₹849",
+        price: "849",
         mrp: "₹1,289",
         discount: "10% off",
         sizes: ["3UK", "4UK", "5UK"],
@@ -135,7 +137,7 @@ function Women() {
         id: 6,
         name: "Women's Party-wear Designer Wedding Slip-on ",
         image: "https://m.media-amazon.com/images/I/51MYkpKpWDL._SY695_.jpg",
-        price: "₹1299",
+        price: "1299",
         mrp: "₹2589",
         discount: "60% off",
         sizes: ["6UK", "7UK", "8UK"],
@@ -173,7 +175,7 @@ function Women() {
   };
 
   const handleAddToCart = () => { 
-    
+    dispatch(addToCart(selectedProduct,1))
   };
 
   const handleBuyNow = () => {

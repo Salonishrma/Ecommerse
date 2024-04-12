@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import './Men.css';
+import {useDispatch} from 'react-redux';
+import { addToCart } from './actions';
 
 function Footwear() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedSize, setSelectedSize] = useState('');
-
+  const dispatch = useDispatch();
   const products = [
     {
       id: 1,
       name: "Marc Loire Women's Fashion Sandal",
       image: "https://m.media-amazon.com/images/I/51dku390cnL._SY695_.jpg",
-      price: "₹883",
+      price: "883",
       mrp: "₹2399",
       discount: "75% off",
       sizes: ["6UK", "7UK", "8UK", "9UK"],
@@ -35,7 +37,7 @@ function Footwear() {
       id: 2,
       name: "TWINS SHOE Women's Comfortable",
       image: "https://m.media-amazon.com/images/I/61UgdYj0UtL._SY695_.jpg",
-      price: "₹1320",
+      price: "1320",
       mrp: "₹1599",
       discount: "15% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -60,7 +62,7 @@ function Footwear() {
       id: 3,
       name: "Marc Loire Women's Ethnic Slip On",
       image: "https://m.media-amazon.com/images/I/61jKs+9SL7L._SY695_.jpg",
-      price: "₹620",
+      price: "620",
       mrp: "₹799",
       discount: "45% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -82,7 +84,7 @@ function Footwear() {
       id: 4,
       name: "purosoft EVA Light Weight Comfortable Floater For Men's",
       image: "https://m.media-amazon.com/images/I/61jYI297EtL._SY695_.jpg",
-      price: "₹349",
+      price: "349",
       mrp: "₹489",
       discount: "25% off",
       sizes: ["6UK", "8UK", "9UK", "10UK"],
@@ -106,7 +108,7 @@ function Footwear() {
       id: 5,
       name: "Doctor Walk® Extra Soft Ortho Slippers",
       image: "https://m.media-amazon.com/images/I/61sMJecQLnL._SY695_.jpg",
-      price: "₹299",
+      price: "299",
       mrp: "₹179",
       discount: "35% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -130,7 +132,7 @@ function Footwear() {
       id: 6,
       name: "Lustre Flip Flop for Women | Soft Comfortable | Breathable |",
       image: "https://m.media-amazon.com/images/I/71WnqrQJ+UL._SY695_.jpg",
-      price: "₹599",
+      price: "599",
       mrp: "₹799",
       discount: "35% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -166,7 +168,7 @@ const handleSizeChange = (size) => {
 };
 
 const handleAddToCart = () => { 
-  
+  dispatch(addToCart(selectedProduct,1))
 };
 
 const handleBuyNow = () => {

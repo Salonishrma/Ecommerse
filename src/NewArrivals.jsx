@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import './Men.css';
+import {useDispatch } from 'react-redux';
+import { addToCart } from "./actions";
+
 
 function NewArrivals() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedSize, setSelectedSize] = useState('');
+  const dispatch = useDispatch();
 
   const products = [
     {
       id: 1,
       name: "SOLETHREADS Stellar Sneakers",
       image: "https://m.media-amazon.com/images/I/61XtqC-cKcL._SY695_.jpg",
-      price: "₹820",
+      price: "820",
       mrp: "₹11,999",
       discount: "45% off",
       sizes: ["6UK", "7UK", "8UK", "9UK"],
@@ -34,7 +38,7 @@ function NewArrivals() {
       id: 2,
       name: "Longwalk Women Casual Sneakers Shoes",
       image: "https://m.media-amazon.com/images/I/71jdvZVGaeL._SY695_.jpg",
-      price: "₹320",
+      price: "320",
       mrp: "₹599",
       discount: "45% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -58,7 +62,7 @@ function NewArrivals() {
       id: 3,
       name: "AMICO Women's & Girls Running & Walking Shoes",
       image: "https://m.media-amazon.com/images/I/610ILkK-gtS._SY695_.jpg",
-      price: "₹620",
+      price: "620",
       mrp: "₹799",
       discount: "45% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -81,7 +85,7 @@ function NewArrivals() {
       id: 4,
       name: "Gangour Sherwani Jutti For Men's",
       image: "https://m.media-amazon.com/images/I/51nZpzunWUL._SY695_.jpg",
-      price: "₹499",
+      price: "499",
       mrp: "₹799",
       discount: "45% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -105,7 +109,7 @@ function NewArrivals() {
       id: 5,
       name: "DFR Rajasthani Latest Stylish Slippers for Women and Girls",
       image: "https://m.media-amazon.com/images/I/716aAMQkiYL._SY695_.jpg",
-      price: "₹498",
+      price: "498",
       mrp: "₹699",
       discount: "35% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -129,7 +133,7 @@ function NewArrivals() {
       id: 6,
       name: "Mochi Women's Party Slip On Heel Fashion Sandals",
       image: "https://m.media-amazon.com/images/I/61wcpDsP92L._SY695_.jpg",
-      price: "₹1299",
+      price: "1299",
       mrp: "₹1799",
       discount: "45% off",
       sizes: ["3UK", "4UK", "5UK", "6UK"],
@@ -165,7 +169,7 @@ const handleSizeChange = (size) => {
 };
 
 const handleAddToCart = () => { 
-  
+  dispatch(addToCart(selectedProduct,1))
 };
 
 const handleBuyNow = () => {

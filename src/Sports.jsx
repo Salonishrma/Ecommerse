@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import {useDispatch} from 'react-redux';
+import { addToCart } from "./actions";
 function Sports(){
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [selectedColor, setSelectedColor] = useState('');
     const [selectedSize, setSelectedSize] = useState('');
-  
+    const dispatch = useDispatch();
     const products = [
       {
         id: 1,
         name: "Campus Men's SLAKE Running Shoes",
         image: "https://m.media-amazon.com/images/I/71+dEU7Mx+L._SY695_.jpg",
-        price: "₹1469",
+        price: "1469",
         mrp: "₹1945",
         discount: "25% off",
         sizes: ["6UK", "7UK", "8UK", "9UK"],
@@ -32,7 +34,7 @@ function Sports(){
         id: 2,
         name: "Campus Men's North Plus Running Shoes",
         image: "https://m.media-amazon.com/images/I/616JlGqyoWL._SY695_.jpg",
-        price: "₹1,075",
+        price: "1,075",
         mrp: "₹1,790",
         discount: "45% off",
         sizes: ["9UK", "10UK"],
@@ -58,7 +60,7 @@ function Sports(){
           id: 3,
           name: "Campus Men's Camp Marlon Running Shoes",
           image: "https://m.media-amazon.com/images/I/61n+Ev+hFLL._SY695_.jpg",
-          price: "₹975",
+          price: "975",
           mrp: "₹1,790",
           discount: "75% off",
           sizes: ["7UK", "8UK", "9UK", "10UK"],
@@ -83,7 +85,7 @@ function Sports(){
           id: 4,
           name: "Red Tape Sports Walking Shoes for Men ",
           image: "https://m.media-amazon.com/images/I/61zWRRfqMGL._SY695_.jpg",
-          price: "₹2,749",
+          price: "2,749",
           mrp: "₹3,889",
           discount: "40% off",
           sizes: ["6UK", "8UK", "10UK"],
@@ -134,7 +136,7 @@ function Sports(){
           id: 6,
           name: "Nivia HY-Court 2.0 Badminton Shoe",
           image: "https://m.media-amazon.com/images/I/71uwtcGCLNL._SY695_.jpg",
-          price: "₹1299",
+          price: "1299",
           mrp: "₹2589",
           discount: "60% off",
           sizes: ["5UK", "8UK", "10UK"],
@@ -172,7 +174,7 @@ function Sports(){
     };
   
     const handleAddToCart = () => { 
-      
+      dispatch(addToCart(selectedProduct,1))
     };
   
     const handleBuyNow = () => {

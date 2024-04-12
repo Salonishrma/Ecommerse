@@ -1,17 +1,39 @@
-.new{
+.new {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 20px;
+    
+}
+
+.new img {
+    width: 60%;
+}
+.new select{
+    font-size: 20px;
+}
+.quant{
+    font-style:oblique;
+}
+.b{
+    font-size: 25px;
+    font-style: oblique;
 }
 @media screen and (max-width: 668px) {
-   
     .new {
         width: 100%;
-        margin-left: 350px;
         font-size: 30px;
+        margin-left: 290px;
+    }
+
+    .new img {
+        width: 80%;
+    }
+    .b{
+        font-size: 30px;
+        
     }
 }

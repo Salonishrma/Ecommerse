@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Sale.css'
-
+import {useDispatch} from 'react-redux';
+import { addToCart } from "./actions";
 function Sale() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedColor, setSelectedColor] = useState('');

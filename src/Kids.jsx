@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import './Men.css';
-
-function Men() {
+import {useDispatch} from 'react-redux';
+import { addToCart } from './actions';
+function Men() { 
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedSize, setSelectedSize] = useState('');
+  const dispatch = useDispatch();
 
   const products = [
     {
       id: 1,
       name: "APTUS Girls Special Occasion Trendy Glitter",
       image: "https://m.media-amazon.com/images/I/61T+siJdvqL._SY695_.jpg",
-      price: "₹620",
+      price: "620",
       mrp: "₹999",
       discount: "45% off",
       sizes: ["2 Years", "2.5 Years", "3 Years", "3.5 Years"],
@@ -36,7 +38,7 @@ function Men() {
       id: 2,
       name: "Liberty Boys Bastian-2e Sneaker ",
       image: "https://m.media-amazon.com/images/I/61smpQgbcCL._SY695_.jpg",
-      price: "₹475",
+      price: "475",
       mrp: "₹790",
       discount: "25% off",
       sizes: ["1 Years","2 Years","3 Years"],
@@ -61,7 +63,7 @@ function Men() {
         id: 3,
         name: "Superminis Unisex-baby's Bootie",
         image: "https://m.media-amazon.com/images/I/61NDN5D-0DL._SY695_.jpg",
-        price: "₹375",
+        price: "375",
         mrp: "₹579",
         discount: "35% off",
         sizes: ["6-12 Month", "1 Years", "2 Years"],
@@ -85,7 +87,7 @@ function Men() {
         id: 4,
         name: "Redburg Kids LED Light Up Shoes ",
         image: "https://m.media-amazon.com/images/I/41TZwDwdP5L.jpg",
-        price: "₹749",
+        price: "749",
         mrp: "₹889",
         discount: "10% off",
         sizes: ["3 Years", "3.5 Years", "4 Years", "4.5 Years"],
@@ -108,7 +110,7 @@ function Men() {
         id: 5,
         name: "Bold N Elegant Girl's Party Soft Velvet ",
         image: "https://m.media-amazon.com/images/I/514T315SbiL._SX679_.jpg",
-        price: "₹449",
+        price: "449",
         mrp: "₹689",
         discount: "10% off",
         sizes: ["3 Years","4 Years","5 Years","6 Years"],
@@ -134,7 +136,7 @@ function Men() {
         id: 6,
         name: "SVAAR Slingback Clog Shoes for Boys & Girls ",
         image: "https://m.media-amazon.com/images/I/51kaDG0yZgL._SX695_.jpg",
-        price: "₹499",
+        price: "499",
         mrp: "₹889",
         discount: "40% off",
         sizes: ["2 Years","3 Years","3.5 Years","4 Years",],
@@ -171,7 +173,7 @@ function Men() {
   };
 
   const handleAddToCart = () => { 
-    
+    dispatch(addToCart(selectedProduct,1));
   };
 
   const handleBuyNow = () => {

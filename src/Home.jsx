@@ -22,7 +22,7 @@ function Home() {
                     <div key={product.id} className="product">
                         <img src={product.image} alt={product.title} />
                         <h3>{product.title}</h3>
-                        <p>Price: ${product.price}</p>
+                        <p>Price: ₹{product.price}</p>
                         <Link to={`/product/${product.id}`}>
                             <button>View Details</button>
                         </Link>
