@@ -26,6 +26,14 @@
 .final {
     margin-top: 20px;
 }
+.checkout{
+    margin-top: 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
 @media (max-width: 568px) {
     .final{
         font-size: 30px;
@@ -33,4 +41,5 @@
         width: 90%;
         color: white;
     }
+    
 }

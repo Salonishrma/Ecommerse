@@ -180,7 +180,7 @@ function Women() {
     dispatch(addToCart(selectedProduct, 1));
     if (selectedProduct) {
       toast.success(`${selectedProduct.name} added to cart successfully!`, {
-        position: 'top-right'
+        position:'top-left'
       });
     }
   };

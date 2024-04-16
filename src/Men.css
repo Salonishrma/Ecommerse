@@ -57,6 +57,13 @@
       margin: 10px;
       text-align: center;
     }
-    
+    .toastify {
+      font-size: 40px; 
+      padding: 10px; 
+    }
+  
+    .toastify-progress-bar {
+      height: 18px; 
+    }
   }
   
