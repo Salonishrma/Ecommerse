@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-
+import './Checkout.css';
 const Checkout = () => {
   const [loading, setLoading] = useState(false);
   const [paymentReceived, setPaymentReceived] = useState(false);
@@ -42,7 +42,7 @@ const Checkout = () => {
       
       {paymentReceived ? (
         <div className="payment-received-message">
-          <p>Thank you! Your payment has been received.</p>
+          <p>❤️ Thank you! Your payment has been received. ❤️</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="checkout-form">
@@ -54,7 +54,7 @@ const Checkout = () => {
       options={{
         style: {
           base: {
-            fontSize: '16px',
+            fontSize: '36px',
             fontFamily: 'Arial, sans-serif',
             '::placeholder': {
               color: '#aab7c4',

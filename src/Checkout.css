@@ -1,0 +1,54 @@
+.card-element-container {
+    margin-bottom: 20px; 
+    width: 100%;
+  }
+  .pay-btn {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+  }
+ 
+  
+  .CardElement {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 24px; 
+  }
+  
+  .pay-button {
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    font-size: 26px; 
+    cursor: pointer;
+    margin-left: 100px; 
+    padding: 10px 50px;
+  }
+  
+  .pay-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    
+    cursor: not-allowed;
+  }
+  .payment-received-message{
+    background-color: grey;
+    text-align-last: center;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  @media (max-width: 768px) {
+    .card-element-container {
+      margin-bottom: 20px;
+    }
+    .pay-button{
+        margin-left:650px;
+        margin-top: 40px;
+        padding: 10px 50px;
+    }
+  }
+  
