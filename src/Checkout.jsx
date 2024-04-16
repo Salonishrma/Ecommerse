@@ -54,7 +54,7 @@ const Checkout = () => {
       options={{
         style: {
           base: {
-            fontSize: '36px',
+            fontSize: '26px',
             fontFamily: 'Arial, sans-serif',
             '::placeholder': {
               color: '#aab7c4',
