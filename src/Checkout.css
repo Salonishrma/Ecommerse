@@ -43,7 +43,7 @@
   }
   @media (max-width: 768px) {
     .card-element-container {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
     .pay-button{
         margin-left:650px;
