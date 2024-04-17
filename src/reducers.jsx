@@ -1,5 +1,3 @@
-
-
 const storedCart = JSON.parse(localStorage.getItem('cart'));
 
 const initialState = {
@@ -23,7 +21,14 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 cart: removeFromCartUpdatedCart,
             };
-      
+        
+        case 'CLEAR_CART':
+            localStorage.removeItem('cart');
+            return {
+                ...state,
+                cart: [],
+            };
+
         default:
             return state;
     }

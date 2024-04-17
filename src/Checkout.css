@@ -80,10 +80,14 @@
   .checkout-form {
     margin-bottom: 20px;
   }
-  
+  .payment-received-message{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
   .delivery-address-section,
   .payment-method-container {
     margin-bottom: 20px;
+    margin-top: 30px;
   }
   
   .pay-btn {
@@ -121,6 +125,10 @@
     }
     .pay-btn{
         margin-left: 600px;
+    }
+    .payment-received-message{
+        width: 285%;
+        margin-top: 30px;
     }
   }
   

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import { useDispatch } from 'react-redux';
+import { clearCart } from './actions'; 
 import './Checkout.css';
 
 const Checkout = () => {
@@ -10,6 +12,7 @@ const Checkout = () => {
   const [deliveryAddressError, setDeliveryAddressError] = useState('');
   const stripe = useStripe();
   const elements = useElements();
+  const dispatch = useDispatch(); 
 
   const handlePaymentMethodChange = (event) => {
     setPaymentMethod(event.target.value);
@@ -57,6 +60,7 @@ const Checkout = () => {
         console.log('PaymentMethod:', paymentMethod);
         setLoading(false);
         setPaymentReceived(true);
+        dispatch(clearCart()); 
       }
     }
   };
@@ -150,6 +154,7 @@ const Checkout = () => {
                   setTimeout(() => {
                     setLoading(false);
                     setPaymentReceived(true);
+                    dispatch(clearCart()); 
                   }, 2000);
                 }}
                 className="pay-button"
